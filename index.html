@@ -1,57 +1,384 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<title>Patryk Dzieża - Portfolio</title>
-<style>
-body{
-    font-family:Arial,sans-serif;
-    max-width:900px;
-    margin:auto;
-    padding:20px;
-    background:#f5f5f5;
-}
-section{
-    background:white;
-    padding:20px;
-    margin:20px 0;
-    border-radius:10px;
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patryk Dzieża | Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 80px 0 60px;
+      text-align: center;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+      color: #ffffff;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #cbd5e1;
+      max-width: 750px;
+      margin: 0 auto 25px;
+    }
+
+    .buttons {
+      margin-top: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 8px;
+      margin: 6px;
+      background: #38bdf8;
+      color: #020617;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      background: #7dd3fc;
+      text-decoration: none;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: #38bdf8;
+      border: 1px solid #38bdf8;
+    }
+
+    .btn-outline:hover {
+      background: #38bdf8;
+      color: #020617;
+    }
+
+    section {
+      padding: 60px 0;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 25px;
+      color: #ffffff;
+      border-left: 5px solid #38bdf8;
+      padding-left: 15px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      border: 1px solid #334155;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    }
+
+    .card h3 {
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      background: #020617;
+      color: #e5e7eb;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid #334155;
+      font-size: 0.95rem;
+    }
+
+    .tag {
+      display: inline-block;
+      margin: 6px 6px 0 0;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: #0f172a;
+      color: #93c5fd;
+      font-size: 0.85rem;
+      border: 1px solid #334155;
+    }
+
+    .timeline-item {
+      margin-bottom: 20px;
+    }
+
+    .timeline-item strong {
+      color: #ffffff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px 0;
+      background: #020617;
+      color: #94a3b8;
+      margin-top: 40px;
+    }
+
+    .highlight {
+      color: #38bdf8;
+      font-weight: bold;
+    }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      section {
+        padding: 40px 0;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<h1>Patryk Dzieża</h1>
-<p>Student Informatyki | AI | Automatyzacje | eCommerce</p>
+  <header>
+    <div class="container">
+      <h1>Patryk Dzieża</h1>
+      <p>
+        Student Informatyki ze specjalizacją <span class="highlight">Sztuczna Inteligencja</span>.
+        Interesuję się automatyzacją procesów, AI, e-commerce, integracjami API oraz praktycznym wykorzystaniem technologii w biznesie.
+      </p>
 
-<section>
-<h2>O mnie</h2>
-<p>
-Student informatyki ze specjalizacją Sztuczna Inteligencja.
-Interesuję się automatyzacją procesów, Make.com, Pythonem,
-OpenAI oraz integracjami systemów eCommerce.
-</p>
-</section>
+      <div class="buttons">
+        <a href="https://github.com/programmer124521" class="btn" target="_blank">GitHub</a>
+        <a href="#projekty" class="btn btn-outline">Zobacz projekty</a>
+        <a href="#kontakt" class="btn btn-outline">Kontakt</a>
+      </div>
+    </div>
+  </header>
 
-<section>
-<h2>Umiejętności</h2>
-<ul>
-<li>Make.com</li>
-<li>Python</li>
-<li>OpenAI API</li>
-<li>SQL</li>
-<li>HTML/CSS</li>
-<li>Base.com</li>
-</ul>
-</section>
+  <main class="container">
 
-<section>
-<h2>Najważniejszy projekt</h2>
-<p>
-Automatyzacja generowania opisów produktów z wykorzystaniem AI
-dla ponad 1100 produktów w systemie Base.com.
-</p>
-</section>
+    <section id="o-mnie">
+      <h2>O mnie</h2>
+      <div class="card">
+        <p>
+          Rozwijam się w kierunku automatyzacji AI, integracji systemów oraz narzędzi wspierających e-commerce.
+          Tworzę praktyczne rozwiązania, które pozwalają ograniczać ręczną pracę, porządkować dane oraz przyspieszać procesy biznesowe.
+        </p>
+        <br>
+        <p>
+          Najbardziej interesują mnie projekty łączące <strong>Make.com</strong>, <strong>OpenAI</strong>,
+          <strong>API</strong>, <strong>Python</strong>, <strong>Base.com</strong> oraz systemy automatyzacji.
+        </p>
+      </div>
+    </section>
+
+    <section id="umiejetnosci">
+      <h2>Umiejętności</h2>
+
+      <div class="skills">
+        <span class="skill">Make.com</span>
+        <span class="skill">OpenAI API</span>
+        <span class="skill">Automatyzacje AI</span>
+        <span class="skill">Prompt Engineering</span>
+        <span class="skill">Python</span>
+        <span class="skill">HTML / CSS</span>
+        <span class="skill">SQL / PostgreSQL</span>
+        <span class="skill">JSON</span>
+        <span class="skill">API integrations</span>
+        <span class="skill">Base.com</span>
+        <span class="skill">eCommerce</span>
+        <span class="skill">GitHub</span>
+        <span class="skill">Raspberry Pi</span>
+        <span class="skill">Home Assistant</span>
+      </div>
+    </section>
+
+    <section id="projekty">
+      <h2>Projekty</h2>
+
+      <div class="grid">
+
+        <div class="card">
+          <h3>Automatyzacja opisów produktów AI</h3>
+          <p>
+            System automatycznie pobierający produkty z magazynu Base.com,
+            generujący opisy produktów z wykorzystaniem AI i aktualizujący istniejące produkty.
+          </p>
+
+          <span class="tag">Make.com</span>
+          <span class="tag">OpenAI</span>
+          <span class="tag">Base API</span>
+          <span class="tag">JSON</span>
+          <span class="tag">HTML</span>
+
+          <br><br>
+          <p>
+            Zakres projektu:
+            pobieranie danych produktów, generowanie opisów, walidacja JSON,
+            obsługa błędów, retry logic oraz aktualizacja treści bez utraty zdjęć.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Synchronizacja produktów między magazynami</h3>
+          <p>
+            Projekt automatyzacji kopiowania produktów pomiędzy magazynami,
+            z zachowaniem parametrów, opisów, zdjęć i danych technicznych.
+          </p>
+
+          <span class="tag">Base.com</span>
+          <span class="tag">API</span>
+          <span class="tag">Make.com</span>
+          <span class="tag">JSON</span>
+
+          <br><br>
+          <p>
+            Celem projektu było usprawnienie pracy z produktami w środowisku e-commerce
+            oraz ograniczenie ręcznego przepisywania danych.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Raspberry Pi + Home Assistant</h3>
+          <p>
+            Automatyzacje domowe oparte o Raspberry Pi i Home Assistant,
+            m.in. uruchamianie komputera przez Wake-on-LAN oraz automatyczne sterowanie urządzeniami.
+          </p>
+
+          <span class="tag">Raspberry Pi</span>
+          <span class="tag">Home Assistant</span>
+          <span class="tag">Wake-on-LAN</span>
+          <span class="tag">Smart Home</span>
+        </div>
+
+        <div class="card">
+          <h3>Projekty SQL i PostgreSQL</h3>
+          <p>
+            Praca z bazami danych, tworzenie tabel, zapytań SQL, filtrowanie danych,
+            sortowanie, agregacje oraz podstawowe operacje na relacyjnych bazach danych.
+          </p>
+
+          <span class="tag">SQL</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Bazy danych</span>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="edukacja">
+      <h2>Edukacja i certyfikaty</h2>
+
+      <div class="card timeline-item">
+        <strong>Informatyka — specjalizacja Sztuczna Inteligencja</strong>
+        <p>
+          Studia informatyczne ukierunkowane na programowanie, bazy danych,
+          sieci komputerowe oraz technologie związane ze sztuczną inteligencją.
+        </p>
+      </div>
+
+      <div class="card timeline-item">
+        <strong>Umiejętności Jutra AI 3.0 — Google + SGH</strong>
+        <p>
+          Kurs dotyczący praktycznego wykorzystania sztucznej inteligencji.
+          Wynik końcowy: <span class="highlight">98%</span>.
+        </p>
+      </div>
+    </section>
+
+    <section id="czego-szukam">
+      <h2>Czego szukam</h2>
+
+      <div class="card">
+        <p>
+          Szukam możliwości rozwoju zawodowego w obszarach:
+        </p>
+        <br>
+        <ul>
+          <li>automatyzacji procesów biznesowych,</li>
+          <li>AI i integracji z modelami językowymi,</li>
+          <li>e-commerce i systemów produktowych,</li>
+          <li>Make.com, API, Python i narzędzi no-code / low-code,</li>
+          <li>wsparcia technicznego oraz wdrażania usprawnień w firmach.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+
+      <div class="card">
+        <p>
+          Jestem otwarty na kontakt w sprawie pracy, stażu, praktyk lub współpracy przy projektach automatyzacji.
+        </p>
+        <br>
+        <p>
+          <strong>GitHub:</strong>
+          <a href="https://github.com/programmer124521" target="_blank">
+            github.com/programmer124521
+          </a>
+        </p>
+        <p>
+          <strong>LinkedIn:</strong>
+          <a href="#" target="_blank">
+            tutaj wklej link do swojego LinkedIna
+          </a>
+        </p>
+        <p>
+          <strong>E-mail:</strong>
+          tutaj wpisz swój adres e-mail
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Patryk Dzieża | Portfolio</p>
+  </footer>
 
 </body>
 </html>
