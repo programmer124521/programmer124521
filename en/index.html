@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -203,67 +203,69 @@
       color: #38bdf8;
       font-weight: bold;
     }
-.cert-details {
-  margin-top: 20px;
-  background: #0f172a;
-  border: 1px solid #334155;
-  border-radius: 12px;
-  padding: 18px;
-}
 
-.cert-details summary {
-  cursor: pointer;
-  font-weight: bold;
-  color: #38bdf8;
-  font-size: 1rem;
-}
+    .cert-details {
+      margin-top: 20px;
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 18px;
+    }
 
-.cert-details summary:hover {
-  color: #7dd3fc;
-}
+    .cert-details summary {
+      cursor: pointer;
+      font-weight: bold;
+      color: #38bdf8;
+      font-size: 1rem;
+    }
 
-.cert-grid {
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-}
+    .cert-details summary:hover {
+      color: #7dd3fc;
+    }
 
-.cert-item {
-  background: #020617;
-  border: 1px solid #334155;
-  border-radius: 12px;
-  padding: 15px;
-}
+    .cert-grid {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
 
-.cert-item h4 {
-  color: #ffffff;
-  margin-bottom: 10px;
-}
+    .cert-item {
+      background: #020617;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 15px;
+    }
 
-.cert-preview {
-  width: 100%;
-  height: 360px;
-  border: none;
-  border-radius: 10px;
-  background: #111827;
-  margin-bottom: 12px;
-}
+    .cert-item h4 {
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
 
-.cert-link {
-  display: inline-block;
-  padding: 9px 14px;
-  border-radius: 8px;
-  background: #38bdf8;
-  color: #020617;
-  font-weight: bold;
-  font-size: 0.9rem;
-}
+    .cert-preview {
+      width: 100%;
+      height: 360px;
+      border: none;
+      border-radius: 10px;
+      background: #111827;
+      margin-bottom: 12px;
+    }
 
-.cert-link:hover {
-  background: #7dd3fc;
-  text-decoration: none;
-}
+    .cert-link {
+      display: inline-block;
+      padding: 9px 14px;
+      border-radius: 8px;
+      background: #38bdf8;
+      color: #020617;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+
+    .cert-link:hover {
+      background: #7dd3fc;
+      text-decoration: none;
+    }
+
     @media (max-width: 700px) {
       .top-bar {
         justify-content: center;
@@ -290,51 +292,51 @@
   <header>
     <div class="container">
       <div class="top-bar">
-        <nav class="lang-switch" aria-label="Wybór języka">
-          <a href="/" class="active" aria-current="page">PL</a>
-          <a href="/en/" lang="en">EN</a>
+        <nav class="lang-switch" aria-label="Language selection">
+          <a href="/" lang="pl">PL</a>
+          <a href="/en/" class="active" aria-current="page">EN</a>
         </nav>
       </div>
 
       <h1>Patryk Dzieża</h1>
       <p>
-        Student Informatyki 2 roku ze specjalizacją <span class="highlight">Sztuczna Inteligencja</span>.
-        Interesuję się automatyzacją procesów, AI, e-commerce, integracjami API oraz praktycznym wykorzystaniem technologii w biznesie.
+        Second-year Computer Science student specializing in <span class="highlight">Artificial Intelligence</span>.
+        I am interested in process automation, AI, e-commerce, API integrations and practical business use of technology.
       </p>
 
       <div class="buttons">
         <a href="https://github.com/programmer124521" class="btn" target="_blank">GitHub</a>
-        <a href="#projekty" class="btn btn-outline">Zobacz projekty</a>
-        <a href="#kontakt" class="btn btn-outline">Kontakt</a>
+        <a href="#projects" class="btn btn-outline">View projects</a>
+        <a href="#contact" class="btn btn-outline">Contact</a>
       </div>
     </div>
   </header>
 
   <main class="container">
 
-    <section id="o-mnie">
-      <h2>O mnie</h2>
+    <section id="about">
+      <h2>About Me</h2>
       <div class="card">
         <p>
-          Rozwijam się w kierunku automatyzacji AI, integracji systemów oraz narzędzi wspierających e-commerce.
-          Tworzę praktyczne rozwiązania, które pozwalają ograniczać ręczną pracę, porządkować dane oraz przyspieszać procesy biznesowe.
+          I am developing my skills in AI automation, system integrations and tools that support e-commerce workflows.
+          I build practical solutions that reduce manual work, organize data and speed up business processes.
         </p>
         <br>
         <p>
-          Najbardziej interesują mnie projekty łączące <strong>Make.com</strong>, <strong>OpenAI</strong>,
-          <strong>API</strong>, <strong>Python</strong>, <strong>Base.com</strong> oraz systemy automatyzacji.
+          I am especially interested in projects combining <strong>Make.com</strong>, <strong>OpenAI</strong>,
+          <strong>APIs</strong>, <strong>Python</strong>, <strong>Base.com</strong> and automation systems.
         </p>
       </div>
     </section>
 
-    <section id="umiejetnosci">
-      <h2>Umiejętności</h2>
+    <section id="skills">
+      <h2>Skills</h2>
 
       <div class="skills">
         <span class="skill">Make.com</span>
         <span class="skill">OpenAI API</span>
-        <span class="skill">Automatyzacje AI</span>
-        <span class="skill">Prompt Engineering</span>
+        <span class="skill">AI automation</span>
+        <span class="skill">Prompt engineering</span>
         <span class="skill">Python</span>
         <span class="skill">HTML / CSS</span>
         <span class="skill">SQL / PostgreSQL</span>
@@ -348,16 +350,16 @@
       </div>
     </section>
 
-    <section id="projekty">
-      <h2>Projekty</h2>
+    <section id="projects">
+      <h2>Projects</h2>
 
       <div class="grid">
 
         <div class="card">
-          <h3>Automatyzacja opisów produktów AI</h3>
+          <h3>AI Product Description Automation</h3>
           <p>
-            System automatycznie pobierający produkty z magazynu Base.com,
-            generujący opisy produktów z wykorzystaniem AI i aktualizujący istniejące produkty.
+            A system that automatically retrieves products from a Base.com warehouse,
+            generates product descriptions using AI and updates existing products.
           </p>
 
           <span class="tag">Make.com</span>
@@ -368,17 +370,17 @@
 
           <br><br>
           <p>
-            Zakres projektu:
-            pobieranie danych produktów, generowanie opisów, walidacja JSON,
-            obsługa błędów, retry logic oraz aktualizacja treści bez utraty zdjęć.
+            Project scope:
+            product data retrieval, description generation, JSON validation,
+            error handling, retry logic and content updates without losing images.
           </p>
         </div>
 
         <div class="card">
-          <h3>Synchronizacja produktów między magazynami</h3>
+          <h3>Product Synchronization Between Warehouses</h3>
           <p>
-            Projekt automatyzacji kopiowania produktów pomiędzy magazynami,
-            z zachowaniem parametrów, opisów, zdjęć i danych technicznych.
+            An automation project for copying products between warehouses
+            while preserving parameters, descriptions, images and technical data.
           </p>
 
           <span class="tag">Base.com</span>
@@ -388,16 +390,16 @@
 
           <br><br>
           <p>
-            Celem projektu było usprawnienie pracy z produktami w środowisku e-commerce
-            oraz ograniczenie ręcznego przepisywania danych.
+            The goal was to improve product management in an e-commerce environment
+            and reduce manual data entry.
           </p>
         </div>
 
         <div class="card">
           <h3>Raspberry Pi + Home Assistant</h3>
           <p>
-            Automatyzacje domowe oparte o Raspberry Pi i Home Assistant,
-            m.in. uruchamianie komputera przez Wake-on-LAN oraz automatyczne sterowanie urządzeniami.
+            Home automation based on Raspberry Pi and Home Assistant,
+            including Wake-on-LAN computer startup and automatic device control.
           </p>
 
           <span class="tag">Raspberry Pi</span>
@@ -407,96 +409,96 @@
         </div>
 
         <div class="card">
-          <h3>Projekty SQL i PostgreSQL</h3>
+          <h3>SQL and PostgreSQL Projects</h3>
           <p>
-            Praca z bazami danych, tworzenie tabel, zapytań SQL, filtrowanie danych,
-            sortowanie, agregacje oraz podstawowe operacje na relacyjnych bazach danych.
+            Work with databases, creating tables, SQL queries, data filtering,
+            sorting, aggregations and basic operations on relational databases.
           </p>
 
           <span class="tag">SQL</span>
           <span class="tag">PostgreSQL</span>
-          <span class="tag">Bazy danych</span>
+          <span class="tag">Databases</span>
         </div>
 
       </div>
     </section>
 
-    <section id="edukacja">
-      <h2>Edukacja i certyfikaty</h2>
+    <section id="education">
+      <h2>Education and Certificates</h2>
 
       <div class="card timeline-item">
-        <strong>Informatyka — specjalizacja Sztuczna Inteligencja</strong>
+        <strong>Computer Science — Artificial Intelligence specialization</strong>
         <p>
-          Studia informatyczne ukierunkowane na programowanie, bazy danych,
-          sieci komputerowe oraz technologie związane ze sztuczną inteligencją.
+          Computer Science studies focused on programming, databases,
+          computer networks and artificial intelligence-related technologies.
         </p>
       </div>
 
       <div class="card timeline-item">
-  <strong>Umiejętności Jutra AI 3.0 — Google + SGH</strong>
-  <p>
-    Kurs dotyczący praktycznego wykorzystania sztucznej inteligencji.
-    Wynik końcowy: <span class="highlight">98%</span>.
-  </p>
+        <strong>Umiejętności Jutra AI 3.0 — Google + SGH</strong>
+        <p>
+          A course focused on the practical use of artificial intelligence.
+          Final score: <span class="highlight">98%</span>.
+        </p>
 
-  <details class="cert-details">
-    <summary>📄 Zobacz certyfikat i suplement</summary>
+        <details class="cert-details">
+          <summary>View certificate and supplement</summary>
 
-    <div class="cert-grid">
+          <div class="cert-grid">
 
-      <div class="cert-item">
-        <h4>Certyfikat — PL</h4>
-        <iframe class="cert-preview" src="UmiejętnośćiJutra-PL.pdf" loading="lazy"></iframe>
-        <a class="cert-link" href="UmiejętnośćiJutra-PL.pdf" target="_blank">Otwórz PDF</a>
+            <div class="cert-item">
+              <h4>Certificate — EN</h4>
+              <iframe class="cert-preview" src="../UmiejętnośćiJutra-ENG.pdf" loading="lazy"></iframe>
+              <a class="cert-link" href="../UmiejętnośćiJutra-ENG.pdf" target="_blank">Open PDF</a>
+            </div>
+
+            <div class="cert-item">
+              <h4>Supplement — EN</h4>
+              <iframe class="cert-preview" src="../Suplement w języku angielskim.pdf" loading="lazy"></iframe>
+              <a class="cert-link" href="../Suplement w języku angielskim.pdf" target="_blank">Open PDF</a>
+            </div>
+
+            <div class="cert-item">
+              <h4>Certificate — PL</h4>
+              <iframe class="cert-preview" src="../UmiejętnośćiJutra-PL.pdf" loading="lazy"></iframe>
+              <a class="cert-link" href="../UmiejętnośćiJutra-PL.pdf" target="_blank">Open PDF</a>
+            </div>
+
+            <div class="cert-item">
+              <h4>Supplement — PL</h4>
+              <iframe class="cert-preview" src="../Suplement w języku polskim_.pdf" loading="lazy"></iframe>
+              <a class="cert-link" href="../Suplement w języku polskim_.pdf" target="_blank">Open PDF</a>
+            </div>
+
+          </div>
+        </details>
       </div>
-
-      <div class="cert-item">
-        <h4>Suplement — PL</h4>
-        <iframe class="cert-preview" src="Suplement w języku polskim_.pdf" loading="lazy"></iframe>
-        <a class="cert-link" href="Suplement w języku polskim_.pdf" target="_blank">Otwórz PDF</a>
-      </div>
-
-      <div class="cert-item">
-        <h4>Certificate — EN</h4>
-        <iframe class="cert-preview" src="UmiejętnośćiJutra-ENG.pdf" loading="lazy"></iframe>
-        <a class="cert-link" href="UmiejętnośćiJutra-ENG.pdf" target="_blank">Open PDF</a>
-      </div>
-
-      <div class="cert-item">
-        <h4>Supplement — EN</h4>
-        <iframe class="cert-preview" src="Suplement w języku angielskim.pdf" loading="lazy"></iframe>
-        <a class="cert-link" href="Suplement w języku angielskim.pdf" target="_blank">Open PDF</a>
-      </div>
-
-    </div>
-  </details>
-</div>
     </section>
 
-    <section id="czego-szukam">
-      <h2>Czego szukam</h2>
+    <section id="looking-for">
+      <h2>What I Am Looking For</h2>
 
       <div class="card">
         <p>
-          Szukam możliwości rozwoju zawodowego w obszarach:
+          I am looking for opportunities to develop professionally in:
         </p>
         <br>
         <ul>
-          <li>automatyzacji procesów biznesowych,</li>
-          <li>AI i integracji z modelami językowymi,</li>
-          <li>e-commerce i systemów produktowych,</li>
-          <li>Make.com, API, Python i narzędzi no-code / low-code,</li>
-          <li>wsparcia technicznego oraz wdrażania usprawnień w firmach.</li>
+          <li>business process automation,</li>
+          <li>AI and integrations with language models,</li>
+          <li>e-commerce and product management systems,</li>
+          <li>Make.com, API, Python and no-code / low-code tools,</li>
+          <li>technical support and implementing improvements in companies.</li>
         </ul>
       </div>
     </section>
 
-    <section id="kontakt">
-      <h2>Kontakt</h2>
+    <section id="contact">
+      <h2>Contact</h2>
 
       <div class="card">
         <p>
-          Jestem otwarty na kontakt w sprawie pracy lub współpracy przy projektach automatyzacji.
+          I am open to job opportunities and collaboration on automation projects.
         </p>
         <br>
         <p>
